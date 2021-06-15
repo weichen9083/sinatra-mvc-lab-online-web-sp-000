@@ -7,7 +7,7 @@ get '/' do
   erb :user_input
 end 
 
-ppost '/piglatinize' do 
+post '/piglatinize' do 
 
   ring = PigLatinizer.new
   @string = ring.pig(params[:user_phrase])  
